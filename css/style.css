@@ -1,0 +1,156 @@
+:root {
+    --color-content: linear-gradient(to bottom, #fff, #909090);
+    --color-nav-button: #909090;
+    --color-boost: rgb(139, 14, 189);
+    --color-dislike: rgb(221, 71, 71);
+    --color-superlike: rgb(0, 174, 255);
+    --color-like: rgb(105, 224, 115);
+    --color-return: rgb(247, 216, 45);
+    --color-bars: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#page {
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+}
+
+nav {
+    height: 8%;
+    width: 100vw;
+    background: var(--color-bars);
+    display: flex;
+}
+
+.button_nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav div i {
+    font-size: 1.5em;
+    color: var(--color-nav-button);
+}
+
+#profile {
+    flex: 2;
+    height: 100%;
+    /* background: cyan; */
+}
+
+#logo {
+    flex: 6;
+    /* background: darkblue; */
+}
+
+#activity {
+    flex: 2;
+    height: 100%;
+    /* background: cyan; */
+}
+
+#content {
+    height: 84%;
+    width: 100vw;
+    background: var(--color-content);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#obj {
+    width: 95%;
+    height: 98%;
+    border-radius: 1em;
+    background: paleturquoise;
+}
+
+#buttons {
+    width: 90vw;
+    height: 4em;
+    /* background: purple; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0 0 5em 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button_choices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: red; */
+    border-radius: 5em;
+}
+
+#boost, #superlike, #return {
+    font-size: 1.5em;
+    aspect-ratio: 1;
+    height: 70%;
+}
+
+#dislike, #like {
+    font-size: 1.5em;
+    aspect-ratio: 1;
+    height: 90%;
+}
+
+#boost {
+    color: var(--color-boost);
+    border: 2px solid var(--color-boost);
+    font-size: 1.3em;
+}
+
+#superlike {
+    color: var(--color-superlike);
+    border: 2px solid var(--color-superlike);
+}
+
+#return {
+    color: var(--color-return);
+    border: 2px solid var(--color-return);
+}
+
+#dislike {
+    color: var(--color-dislike);
+    border: 2px solid var(--color-dislike);
+    font-size: 2em;
+}
+
+#like {
+    color: var(--color-like);
+    border: 2px solid var(--color-like);
+}
+
+footer {
+    height: 8%;
+    width: 100vw;
+    background: var(--color-bars);
+    display: flex;
+    /* box-shadow: 0 0 3em var(--color-bars); */
+}
+
+.button_footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+    color: var(--color-nav-button);
+    font-size: 1.2em;
+    /* background: palegreen; */
+    /* box-shadow: inset 0 0 0 .2em black; */
+}
+
+#main {
+    color: rgb(255, 0, 85);
+}
