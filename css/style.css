@@ -1,5 +1,5 @@
 :root {
-    --color-content: linear-gradient(to bottom, #fff, #909090);
+    --color-content: linear-gradient(to bottom, #fff, #fff, #fff, #909090);
     --color-nav-button: #909090;
     --color-boost: rgb(139, 14, 189);
     --color-dislike: rgb(221, 71, 71);
@@ -12,6 +12,10 @@
 body {
     margin: 0;
     padding: 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 #page {
@@ -33,7 +37,7 @@ nav {
     justify-content: center;
 }
 
-nav div i {
+nav a i {
     font-size: 1.5em;
     color: var(--color-nav-button);
 }
@@ -49,7 +53,7 @@ nav div i {
     /* background: darkblue; */
 }
 
-#activity {
+#config {
     flex: 2;
     height: 100%;
     /* background: cyan; */
@@ -68,17 +72,18 @@ nav div i {
     width: 95%;
     height: 98%;
     border-radius: 1em;
-    background: paleturquoise;
+    background: rgb(51, 51, 51);
+    border: 1px solid black;
 }
 
 #buttons {
-    width: 90vw;
+    width: 86vw;
     height: 4em;
     /* background: purple; */
     position: absolute;
-    bottom: 0;
+    bottom: 8%;
     left: 0;
-    margin: 0 0 5em 5vw;
+    margin: 0 0 1.5em 7vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -91,6 +96,10 @@ nav div i {
     /* background: red; */
     border-radius: 5em;
 }
+
+/* .button_choices:hover {
+    filter: drop-shadow(0 0 20px red);
+} */
 
 #boost, #superlike, #return {
     font-size: 1.5em;
@@ -108,6 +117,17 @@ nav div i {
     color: var(--color-boost);
     border: 2px solid var(--color-boost);
     font-size: 1.3em;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#boost:active {
+    filter: drop-shadow(0 0 2px var(--color-boost));
+}
+
+#boost:hover {
+    background: var(--color-boost);
+    color: #fff;
 }
 
 #superlike {
@@ -115,9 +135,29 @@ nav div i {
     border: 2px solid var(--color-superlike);
 }
 
+#superlike:active {
+    filter: drop-shadow(0 0 2px var(--color-superlike));
+}
+
+#superlike:hover {
+    background: var(--color-superlike);
+    color: #fff;
+}
+
 #return {
     color: var(--color-return);
     border: 2px solid var(--color-return);
+    opacity: 0;
+    pointer-events: none;
+}
+
+#return:active {
+    filter: drop-shadow(0 0 2px var(--color-return));
+}
+
+#return:hover {
+    background: var(--color-return);
+    color: #fff;
 }
 
 #dislike {
@@ -126,9 +166,27 @@ nav div i {
     font-size: 2em;
 }
 
+#dislike:active {
+    filter: drop-shadow(0 0 2px var(--color-dislike));
+}
+
+#dislike:hover {
+    background: var(--color-dislike);
+    color: #fff;
+}
+
 #like {
     color: var(--color-like);
     border: 2px solid var(--color-like);
+}
+
+#like:active {
+    filter: drop-shadow(0 0 2px var(--color-like));
+}
+
+#like:hover {
+    background: var(--color-like);
+    color: #fff;
 }
 
 footer {
@@ -139,11 +197,15 @@ footer {
     /* box-shadow: 0 0 3em var(--color-bars); */
 }
 
+footer i {
+    font-size: 1.5em;
+}
+
 .button_footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 25%;
+    width: 33.33333%;
     height: 100%;
     color: var(--color-nav-button);
     font-size: 1.2em;
@@ -151,6 +213,30 @@ footer {
     /* box-shadow: inset 0 0 0 .2em black; */
 }
 
-#main {
+.active_button {
     color: rgb(255, 0, 85);
 }
+
+/*                    PROFILE PAGE                  */
+
+#close_profile {
+    font-size: 1.5em;
+    flex: 2;
+    height: 100%;
+    /* background: cyan; */
+}
+
+#title {
+    font-size: 1.5em;
+    /* font-family: ; */
+    flex: 6;
+    /* background: darkblue; */
+}
+
+#config_fill {
+    flex: 2;
+    height: 100%;
+}
+
+/*                      CONFIG PAGE                   */
+
