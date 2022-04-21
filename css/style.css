@@ -18,6 +18,14 @@ a {
     text-decoration: none;
 }
 
+button {
+    background: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
 #page {
     width: 100vw;
     height: 100vh;

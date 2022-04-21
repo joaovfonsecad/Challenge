@@ -24,6 +24,15 @@ function addColorButtons() {
     if (window.location.pathname == '/eventos.html') {
         eventosButton.classList.add("active_button");
     }
+    if(window.location.pathname == '/Challenge/index.html') {
+        mainButton.classList.add("active_button");
+    }
+    if (window.location.pathname == '/Challenge/chats.html') {
+        chatsButton.classList.add("active_button");
+    }
+    if (window.location.pathname == '/Challenge/eventos.html') {
+        eventosButton.classList.add("active_button");
+    }
 }
 
 function buttonFooter() {
