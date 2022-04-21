@@ -77,13 +77,13 @@ nav a i {
 }
 
 #buttons {
-    width: 86vw;
+    width: 60vw;
     height: 4em;
     /* background: purple; */
     position: absolute;
     bottom: 8%;
     left: 0;
-    margin: 0 0 1.5em 7vw;
+    margin: 0 0 1.5em 20vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
