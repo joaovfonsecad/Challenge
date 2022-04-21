@@ -1,6 +1,6 @@
-const mainButton = document.getElementById("main");
-const chatsButton = document.getElementById("chats");
-const eventosButton = document.getElementById("eventos");
+let mainButton = document.getElementById("main");
+let chatsButton = document.getElementById("chats");
+let eventosButton = document.getElementById("eventos");
 
 function clearButtons() {
     if(chatsButton.classList.contains("active_button")) {
