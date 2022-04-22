@@ -1,5 +1,5 @@
 :root {
-    --color-content: linear-gradient(to bottom, #fff, #fff, #fff, #909090);
+    --color-content: linear-gradient(to bottom, #fff, #fff, #fff, #d1d1d1);
     --color-nav-button: #909090;
     --color-boost: rgb(139, 14, 189);
     --color-dislike: rgb(221, 71, 71);
@@ -7,6 +7,7 @@
     --color-like: rgb(105, 224, 115);
     --color-return: rgb(247, 216, 45);
     --color-bars: #fff;
+    --color-active-button: rgb(255, 0, 85);
 }
 
 body {
@@ -25,6 +26,69 @@ button {
 button:hover {
     cursor: pointer;
 }
+
+/*                  LOGIN PAGE                   */
+
+#login_page {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    caret-color: transparent;
+}
+
+#login_page form {
+    display: flex;
+    flex-direction: column;
+}
+
+#login_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#login_wrapper input, #login_wrapper a, #login_wrapper label {
+    margin-top: .7em;
+    font-size: 1.2em;
+}
+
+#login_wrapper a {
+    margin-top: 1.2em;
+}
+
+#login_wrapper label {
+    font-size: 1.3em;
+    color: var(--color-active-button);
+}
+
+#login_wrapper input {
+    border-radius: 2em;
+    padding: .3em 0 .3em .7em;
+    caret-color: var(--color-active-button);
+}
+
+#login_button {
+    border: 1px solid black;
+    padding: .2em 1em .2em 1em;
+    border-radius: .3em;
+}
+
+#subscribe_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#subscribe_wrapper span{
+    margin-top: .5em;
+}
+
+/*                  JOBBER PAGE                   */
 
 #page {
     width: 100vw;
@@ -222,7 +286,7 @@ footer i {
 }
 
 .active_button {
-    color: rgb(255, 0, 85);
+    color: var(--color-active-button);
 }
 
 /*                    PROFILE PAGE                  */
