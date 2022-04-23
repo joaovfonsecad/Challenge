@@ -35,7 +35,7 @@ function addColorButtons() {
         mainButton.classList.add("active_button");
     }
     if(window.location.pathname == '/Challenge/jobber.html') {
-        mainButton.classList.add("active_button");
+        jobberButton.classList.add("active_button");
     }
     if (window.location.pathname == '/Challenge/chats.html') {
         chatsButton.classList.add("active_button");
