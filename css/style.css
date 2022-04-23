@@ -90,10 +90,13 @@ button:hover {
 
 /*                  PAGES                   */
 
-#page {
+.page {
     width: 100vw;
-    height: 100vh;
-    background: #fff;
+    height: 84vh;
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    margin-top: 8vh;
 }
 
 nav {
@@ -117,18 +120,18 @@ nav a i {
     color: var(--color-nav-button);
 }
 
-#profile {
+.profile {
     flex: 2;
     height: 100%;
     /* background: cyan; */
 }
 
-#logo {
+.logo {
     flex: 6;
     /* background: darkblue; */
 }
 
-#config {
+.config {
     flex: 2;
     height: 100%;
     /* background: cyan; */
@@ -137,7 +140,6 @@ nav a i {
 #content {
     width: 100vw;
     background: var(--color-content);
-    margin-top: 8%;
 }
 
 footer {
@@ -171,9 +173,15 @@ footer i {
     color: var(--color-active-button);
 }
 
-/*                    PROFILE PAGE                  */
+/*               PROFILE/CONFIG PAGE                  */
 
-#close_profile {
+.profig_page {
+    margin-top: 8vh;
+    height: 92vh;
+    /* background: red; */
+}
+
+.close_profile {
     font-size: 1.5em;
     flex: 2;
     height: 100%;
@@ -194,31 +202,116 @@ footer i {
 
 /*                      MAIN PAGE                     */
 
-#main_page {
-    width: 100vw;
-    height: 100vh;
-}
-
 #main_content {
-    width: 96vw;
-    margin-top: 10%;
+    width: 100vw;
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    /* background: blue; */
+    overflow: scroll;
+    overflow-x: hidden;
+    caret-color: transparent;
+}
+
+#titulo_main {
+    /* background: red; */
+    width: 90%;
+    margin-top: 1em;
+}
+
+#titulo_main h1 {
+    margin: 0;
+}
+
+#main_content button {
+    padding: .5em .8em .5em .8em;
+    font-size: 1.1em;
+    border-radius: .4em;
+    border: 0;
+    background: var(--color-active-button);
+    color: white;
 }
 
 #filters {
-    width: 98%;
+    width: 96%;
+    /* background: red; */
+    background: rgba(255, 166, 0, 0.15);
+    padding-bottom: 1em;
+    border-radius: .5em;
+    margin-top: 2vh;
+}
+
+.filters_input_wrapper {
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    /* background: green; */
 }
 
 #filters form {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
-#filters form input {
-    width: 90%;
+#filters form label {
+    margin-top: 1em;
+    font-size: 1.1em;
+}
+
+#filters form input, #filters form select {
+    padding: .5em 0 .5em 1em;
+    border-radius: .4em;
+    border: 1px solid black;
+    margin-top: 1em;
+    font-size: 1em;
+}
+
+#filters button {
+    width: 94%;
+    margin-top: 1.5em;
+}
+
+#filters button i {
+    margin-right: .2em;
+}
+
+#job_offers {
+    width: 96%;
+    /* background: red; */
+    padding-bottom: 1em;
+}
+
+.job {
+    /* background: orange; */
+    margin: 1em 0 1em 0;
+    border-radius: .5em;
+    border: 1px solid black;
+    padding: 1.5em;
+    padding-top: 0;
+}
+
+#info_pesquisa {
+    width: 95%;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+#info_pesquisa p {
+    margin: 0;
+}
+
+#info_pesquisa_vagas {
+    font-size: 1.3em;
+}
+
+#info_pesquisa_anuncios {
+    font-size: 1.1em;
+}
+
+#ad_fifa {
+    margin-bottom: 2em;
 }
 
 /*                      JOBBER                        */
@@ -246,6 +339,7 @@ footer i {
     border-radius: 1em;
     background: rgb(51, 51, 51);
     border: 1px solid black;
+    color: white;
 }
 
 #buttons {
@@ -360,6 +454,3 @@ footer i {
     background: var(--color-like);
     color: #fff;
 }
-
-/*                      CONFIG PAGE                   */
-

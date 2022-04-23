@@ -9,45 +9,119 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div id="main_page">
+    <div class="page">
         <nav>
             <!-- <div class="button_nav" id="profile">
                 <i class="fa-solid fa-user"></i>
             </div> -->
-            <a href="./profile.html" class="button_nav" id="profile">
+            <a href="./profile.html" class="button_nav profile">
                 <i class="fa-solid fa-user"></i>
             </a>
-            <a href="./main.html" class="button_nav" id="logo">
+            <a href="./main.html" class="button_nav logo">
                 <!-- <img src="" alt=""> -->
                 <h1>LOGO JOBBER</h1>
             </a>
-            <a href="./config.html" class="button_nav" id="config">
+            <a href="./config.html" class="button_nav config">
                 <i class="fa-solid fa-gear"></i>
             </a>
         </nav>
         <div id="main_content">
+            <div id="titulo_main">
+                <h1>Pesquisa de Vagas</h1>
+            </div>
             <div id="filters">
                 <form action="">
-                    <label for="keyword"><b>Cargo ou palavra-chave</b></label>
-                    <input type="text" placeholder="Exemplo: Desenvolvedor Full Stack" name="keyword" id="keywordId">
-                    <label for="region"><b>Cargo ou palavra-chave</b></label>
-                    <input type="text" placeholder="Exemplo: São Paulo" name="region" id="regionId">
-                    <label for="date"><b>Cargo ou palavra-chave</b></label>
-                    <input type="text" placeholder="Qualquer data" name="date" id="dateId">
-                    <label for="keyword"><b>Cargo ou palavra-chave</b></label>
-                    <input type="text" placeholder="Exemplo: Desenvolvedor Full Stack" name="keyword" id="keywordId">
-                    <label for="keyword"><b>Cargo ou palavra-chave</b></label>
-                    <input type="text" placeholder="Exemplo: Desenvolvedor Full Stack" name="keyword" id="keywordId">
-                    <label for="keyword"><b>Cargo ou palavra-chave</b></label>
-                    <input type="text" placeholder="Exemplo: Desenvolvedor Full Stack" name="keyword" id="keywordId">
-                    <label for="keyword"><b>Cargo ou palavra-chave</b></label>
-                    <input type="text" placeholder="Exemplo: Desenvolvedor Full Stack" name="keyword" id="keywordId">
-            
+                    <div class="filters_input_wrapper">
+                        <label for="keyword"><b>Cargo ou palavra-chave</b></label>
+                        <input type="text" placeholder="Exemplo: Desenvolvedor Full Stack" name="keyword" id="keywordId">
+                    </div>
+                    <div class="filters_input_wrapper">
+                        <label for="region"><b>Cidade, estado, região</b></label>
+                        <input type="text" placeholder="Exemplo: São Paulo" name="region" id="regionId">
+                    </div>
+                    <div class="filters_input_wrapper">
+                        <label for="disability"><b>Tipo de deficiência</b></label>
+                        <select name="disability" id="disability_select">
+                            <option value="0">Selecione uma opção</option>
+                            <option value="1">Auditiva</option>
+                            <option value="2">Física</option>
+                            <option value="3">Intelectual</option>
+                            <option value="4">Mental/Psicossocial</option>
+                            <option value="5">Múltipla</option>
+                            <option value="6">Transtorno do Espectro Autista (TEA)</option>
+                            <option value="7">Visual</option>
+                        </select>
+                    </div>
+                    <div class="filters_input_wrapper">
+                        <label for="contract_type"><b>Tipo de contrato</b></label>
+                        <select name="contract_type" id="contract_select">
+                            <option value="0">Selecione uma opção</option>
+                            <option value="1">CLT (Efetivo)</option>
+                            <option value="2">Prestador de Serviços (PJ)</option>
+                            <option value="3">Temporário</option>
+                            <option value="4">Autônomo</option>
+                            <option value="5">Freelancer</option>
+                            <option value="6">Trainee</option>
+                            <option value="7">Cooperação</option>
+                        </select>
+                    </div>                               
+                    <button id="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <b>Buscar</b>
+                    </button>
                 </form>
             </div>
-            <div id="job_offers">
-
+            <div id="info_pesquisa">
+                <p id="info_pesquisa_vagas">
+                    <span id="n_vagas_emprego">3.823 </span>vagas de emprego de <span id="vaga_pesquisa">analise de sistemas</span>
+                </p>
+                <p id="info_pesquisa_anuncios">
+                    <br> Total de anúncios: <span id="n_anuncios">2924</span>
+                </p>
             </div>
+            <div id="job_offers">
+                <div class="job j1">
+                    <h2>Estágio em Análise de Sistemas</h2>
+                    <h3>IBM</h3>
+                    <p class="job_offers_details">A combinar <br>
+                        <b>1 vaga:</b> São Paulo - SP <br>
+                        Publicada em 20/04
+                    </p>
+                    <p class="job_offers_description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate doloremque, quam ipsam omnis illum fuga obcaecati sequi natus officiis dolores ea dolorem vel facere inventore exercitationem assumenda labore, quisquam temporibus.
+                    </p>
+                    <hr>
+                    <h3>Dados da Empresa</h3>
+                    <div class="job_offers_comp_info">
+                        <h2>IBM</h2>
+                        <p>Cadastre-se gratuitamente para ver mais informações da empresa.</p>
+                    </div>
+                    <button class="apply">
+                        <b> Quero me candidatar </b>
+                    </button>
+                </div>
+                <div class="job j2">
+                    <h2>Analista de Sistemas</h2>
+                    <h3>IBM</h3>
+                    <p class="job_offers_details">A combinar <br>
+                        <b>1 vaga:</b> São Paulo - SP <br>
+                        Publicada em 20/04
+                    </p>
+                    <p class="job_offers_description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate doloremque, quam ipsam omnis illum fuga obcaecati sequi natus officiis dolores ea dolorem vel facere inventore exercitationem assumenda labore, quisquam temporibus.
+                    </p>
+                    <hr>
+                    <h3>Dados da Empresa</h3>
+                    <div class="job_offers_comp_info">
+                        <h2>IBM</h2>
+                        <p>Cadastre-se gratuitamente para ver mais informações da empresa.</p>
+                    </div>
+                    <button class="apply">
+                        <b> Quero me candidatar </b>
+                    </button>
+                </div>
+            </div>
+            <img src="./img/FIFA22UE_Banner_610x195.png" id="ad_fifa" alt="">
         </div>
         <footer>
             <a href="./main.html" class="button_footer" id="main" onclick="buttonFooter()">
