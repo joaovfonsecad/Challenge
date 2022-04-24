@@ -120,7 +120,7 @@ nav a i {
     color: var(--color-nav-button);
 }
 
-.profile {
+.home {
     flex: 2;
     height: 100%;
     /* background: cyan; */
@@ -173,12 +173,38 @@ footer i {
     color: var(--color-active-button);
 }
 
-/*               PROFILE/CONFIG PAGE                  */
+/*               OPTIONS PAGE                  */
 
-.profig_page {
+.opt_page {
     margin-top: 8vh;
     height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    caret-color: transparent;
     /* background: red; */
+}
+
+#options {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background: red; */
+    width: 40%;
+    height: 40%;
+    font-size: 2em;
+}
+
+.button_opt {
+    /* background: orange; */
+    border-radius: 50%;
+    height: .3em;
+    width: .3em;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
 }
 
 .close_profile {
@@ -481,15 +507,20 @@ footer i {
 }
 
 .img_pessoa {
-    height: 70%;
     display: flex;
-    border-radius: 50%;
     overflow: hidden;
     margin-left: 2em;
 }
 
+.img_pessoa {
+    height: 5em;
+    width: 5em;
+    border-radius: 50%;
+}
+
 .titulo_msg {
     margin-left: 2em;
+    width: 50%;
 }
 
 .open_chat_icon {
