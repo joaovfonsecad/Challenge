@@ -14,9 +14,12 @@
             <i class="fa-solid fa-xmark"></i>
         </button>
     </div>
-    <div id="info">
-        <h2>Pesquisa de Vagas</h2>
-        <p>Pagina destinada à pesquisa de vagas</p>
+    <div id="info" onclick="openCloseInfo()">
+        <h2>Página de Chats</h2>
+        <p>Pagina voltada tanto a candidatos quanto a empresas. <br> Apresenta a lista de conversas entre usuários. <br>Ao abrir um chat uma div na própria página irá abrir com o log da conversa e o user poderá dar continuidade ao seu diálogo. <br> </p>
+        <p>Clique na parte cinza, ou no ícone "i" azul à direita para uma pré visualização de como será a página.</p>
+      <p>Clique no botão home no canto superior esquerdo para voltar ao mapa do site.</p>
+      <p>Clique nos tres pontinhos no canto superior direito para acessar a página de opções.</p>
     </div>
     <div class="page">
         <nav>
@@ -35,7 +38,7 @@
             </a>
         </nav>
         <div class="content">
-            <a href="" class="chat_preview" id="c1">
+            <button  class="chat_preview" id="c1">
                 <div class="chat_preview_wrapper">
                     <div class="img_pessoa">
                         <img src="./img/chat_pessoa_1.png" alt="">
@@ -48,8 +51,8 @@
                 <div class="open_chat_icon_wrapper">
                     <i class="fa-solid fa-angle-right open open_chat_icon"></i>
                 </div>
-            </a>
-            <a href="" class="chat_preview" id="c2">
+            </button>
+            <button href="" class="chat_preview" id="c2">
                 <div class="chat_preview_wrapper">
                     <div class="img_pessoa">
                         <img src="./img/chat_pessoa_2.png" alt="">
@@ -62,8 +65,8 @@
                 <div class="open_chat_icon_wrapper">
                     <i class="fa-solid fa-angle-right open open_chat_icon"></i>
                 </div>
-            </a>
-            <a href="" class="chat_preview" id="c3">
+            </button>
+            <button href="" class="chat_preview" id="c3">
                 <div class="chat_preview_wrapper">
                     <div class="img_pessoa">
                         <img src="./img/chat_pessoa_3.png" alt="">
@@ -76,7 +79,7 @@
                 <div class="open_chat_icon_wrapper">
                     <i class="fa-solid fa-angle-right open open_chat_icon"></i>
                 </div>
-            </a>
+            </button>
         </div>
         <footer>
             <a href="./main.html" class="button_footer" id="main" onclick="buttonFooter()">

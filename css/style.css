@@ -42,9 +42,17 @@ button:hover {
     margin: 2em 0 0 2em;
 }
 
+#map_page p {
+    margin: 2em 20em 0 4em;
+}
+
 #map_page ul {
     list-style: none;
-    margin: 2em 0 0 2em;
+    margin: 2em 0 0 3em;
+}
+
+#map_page ul li {
+    margin-top: .5em;
 }
 
 #map_page #info {
@@ -61,6 +69,20 @@ button:hover {
     justify-content: center;
     flex-direction: column;
     caret-color: transparent;
+}
+
+#home_wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 2em;
+    font-size: 1.4em;
+    color: black;
+    z-index: 10;
+}
+
+#home_wrapper .home {
+    color: var(--color-active-button);
 }
 
 #login_page #info{
@@ -518,6 +540,7 @@ footer i {
     width: 100vw;
     display: flex;
     align-items: center;
+    border: 0;
     /* background: red; */
 }
 
@@ -572,6 +595,7 @@ footer i {
     justify-content: center;
     box-shadow: 0 .2em .5em rgba(0, 0, 0, 0.8);
     z-index: 10;
+    caret-color: transparent;
 }
 
 #info_button {
@@ -594,7 +618,7 @@ footer i {
 }
 
 #info h2 {
-    margin: 2em 2em 0 2em;
+    margin: 5em 2em 0 2em;
     /* background: red; */
 }
 
