@@ -8,6 +8,7 @@
     --color-return: rgb(247, 216, 45);
     --color-bars: rgb(58, 58, 58);
     --color-active-button: rgb(255, 0, 85);
+    --color-info: rgb(30, 30, 99);
 }
 
 body {
@@ -162,6 +163,7 @@ nav {
     top: 0;
     border-bottom: 1px solid black;
     box-shadow: 0 .2em .5em #0000005a;
+    color: var(--color-nav-button);
 }
 
 .button_nav {
@@ -599,7 +601,7 @@ footer i {
     position: fixed;
     height: 3.5em;
     width: 4em;
-    background: rgb(30, 30, 99);
+    background: var(--color-info);
     right: 0;
     top: 30%;
     border-radius: 2.5em 0 0 2.5em;
@@ -650,4 +652,30 @@ footer i {
 
 .profig_page #info {
     margin-top: 8vh;
+}
+
+.profig_page #info ul {
+    list-style: none;
+    margin-left: 2em;
+}
+
+#info_descricao {
+    color: var(--color-like);
+}
+
+#links {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5em;
+    margin-left: 15vw;
+    /* background: red; */
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#links a {
+    color: var(--color-active-button);
+    font-size: 2em;
 }
