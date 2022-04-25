@@ -51,6 +51,10 @@ button:hover {
     margin: 2em 0 0 3em;
 }
 
+#map_page ul ul {
+    margin: 0;
+}
+
 #map_page ul li {
     margin-top: .5em;
 }
@@ -235,6 +239,15 @@ footer i {
     justify-content: center;
     caret-color: transparent;
     /* background: red; */
+}
+
+.opt_page ul{
+    list-style: none;
+    margin: 2em 0 0 2em;
+}
+
+.opt_page ul li a{
+    color: var(--color-active-button);
 }
 
 #options {
