@@ -11,7 +11,7 @@
 <body>
     <div id="info_banner">
         <button id="info_button" onclick="openCloseInfo()">
-            <i class="fa-solid fa-xmark"></i>
+            <i class="fa-solid fa-info"></i>
         </button>
     </div>
     <div id="info" class="info_closed" onclick="openCloseInfo()">
@@ -22,8 +22,14 @@
             <p>Clique no botão home no canto superior esquerdo para voltar ao mapa do site.</p>
             <p>Clique nos tres pontinhos no canto superior direito para acessar a página de opções.</p>
             <div id="links">
-                <a href="login.html">login</a>
-                <a href="jobber.html">Jobber</a>
+                <a href="login.html">
+                    <i class="fa-solid fa-angle-left"></i>
+                    login
+                </a>
+                <a href="jobber.html">
+                    Jobber
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
             </div>
         </div>
     </div>
@@ -43,6 +49,27 @@
                 <i class="fa-solid fa-ellipsis-vertical"></i>
             </a>
         </nav>
+        <div id="options">
+            <div class="opt_wrapper">
+                <a href="./profile.html" class="button_opt profile">
+                    <!-- <i class="fa-solid fa-user"></i> -->
+                    Profile
+                </a>
+            </div>
+            <div class="opt_wrapper">
+                <a href="./config.html" class="button_opt config">
+                    <!-- <i class="fa-solid fa-gear"></i> -->
+                    Config
+                </a>
+            </div>
+            <div class="opt_wrapper">
+                <a href="./login.html" class="button_opt config">
+                    <!-- <i class="fa-solid fa-arrow-right-to-bracket"></i> -->
+                    Login
+                </a>
+            </div>
+        </div>
+        <div id="options_ghost_div"></div>
         <div id="main_content">
             <div id="titulo_main">
                 <h1>Pesquisa de Vagas</h1>

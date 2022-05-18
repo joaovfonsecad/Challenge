@@ -17,7 +17,7 @@
     </div>
     <div id="info_banner">
       <button id="info_button" onclick="openCloseInfo()">
-        <i class="fa-solid fa-xmark"></i>
+        <i class="fa-solid fa-info"></i>
       </button>
     </div>
     <div id="info" class="info_closed" onclick="openCloseInfo()">
@@ -28,17 +28,22 @@
       <p>Clique no botão home no topo para voltar ao mapa do site.</p>
       <p>O botão de login está temporariamente direcionado à futura página principal do aplicativo. Usuário e senha temporariamente desabilitados.</p>
       <div id="links">
-        <a href="index.html">Mapa do site</a>
-        <a href="main.html">Página Principal</a>
+        <a href="index.html">
+          <i class="fa-solid fa-angle-left"></i>
+          Mapa do site</a>
+        <a href="main.html">
+          Página Principal
+          <i class="fa-solid fa-angle-right"></i>
+        </a>
     </div>
     </div>
     <h1>LOGO JOBBER</h1>
     <form action="index.html" method="get">
       <div id="login_wrapper">
-        <label for="uname"><b>Username</b></label>
+        <label for="uname"><b>Username:</b></label>
         <input type="text" placeholder="Enter Username" name="uname" id="unameId">
 
-        <label for="psw"><b>Password</b></label>
+        <label for="psw"><b>Password:</b></label>
         <input type="password" placeholder="Enter Password" name="psw" id="pswId">
 
         <a href="./main.html" id="login_button">Login</a>
