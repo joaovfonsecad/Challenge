@@ -9,13 +9,34 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <div id="options" class="closed">
+        <div class="opt_wrapper">
+            <a href="./profile.html" class="button_opt profile">
+                <!-- <i class="fa-solid fa-user"></i> -->
+                Profile page
+            </a>
+        </div>
+        <div class="opt_wrapper">
+            <a href="./config.html" class="button_opt config">
+                <!-- <i class="fa-solid fa-gear"></i> -->
+                Configurations
+            </a>
+        </div>
+        <div class="opt_wrapper">
+            <a href="./login.html" class="button_opt config">
+                <!-- <i class="fa-solid fa-arrow-right-to-bracket"></i> -->
+                Login/Create account
+            </a>
+        </div>
+    </div>
+    <div id="options_banner" class="closed"></div>
     <div id="jobber_page">
         <div id="info_banner">
             <button id="info_button" onclick="openCloseInfo()">
                 <i class="fa-solid fa-info"></i>
             </button>
         </div>
-        <div id="info" class="info_closed" onclick="openCloseInfo()">
+        <div id="info" class="closed" onclick="openCloseInfo()">
             <h2>Página Jobber (Match entre empresas e candidatos)</h2>
             <p>Pagina voltada tanto a candidatos quanto a empresas. <br> Mostra um resumo de uma empresa(ou de um candidato) de acordo com as áreas de preferencia dadas pelo usuário na hora de seu cadastro. <br> Contém 3 botões, sendo eles um de dislike(sem interesse), um de superlike(muito interesse), e um de like(interesse). Após o usuário optar por uma dessas opções uma nova empresa(ou candidato) será apresentada(o). <br> </p>
             <div id="info_descricao">
@@ -45,9 +66,9 @@
                 <!-- <img src="" alt=""> -->
                 <h1>LOGO JOBBER</h1>
             </a>
-            <a href="./opt.html" class="button_nav config">
+            <button class="button_nav config">
                 <i class="fa-solid fa-ellipsis-vertical"></i>
-            </a>
+            </button>
         </nav>
         <div id="jobber_content">
             <div id="obj">

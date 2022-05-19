@@ -1,7 +1,10 @@
-var jobberButton = document.getElementById("jobber");
-var chatsButton = document.getElementById("chats");
-var eventosButton = document.getElementById("eventos");
-var mainButton = document.getElementById("main");
+const jobberButton = document.getElementById("jobber");
+const chatsButton = document.getElementById("chats");
+const eventosButton = document.getElementById("eventos");
+const mainButton = document.getElementById("main");
+const options = document.getElementById("options");
+const optionsBanner = document.getElementById("options_banner")
+const optionsButton = document.querySelector(".button_nav.config");
 
 var info = document.getElementById("info");
 var infoButton = document.getElementById("info_button");
@@ -56,12 +59,37 @@ function buttonFooter() {
 buttonFooter();
 
 function openCloseInfo() {
-    if (info.classList.contains("info_closed")) {
-        info.classList.remove("info_closed");
+    if (info.classList.contains("closed")) {
+        info.classList.remove("closed");
         infoButton.innerHTML = '<i class="fa-solid fa-xmark"></i>'
     }
     else {
-        info.classList.add("info_closed");
+        info.classList.add("closed");
         infoButton.innerHTML = '<i class="fa-solid fa-info"></i>'
     }
 }
+
+optionsButton.addEventListener("click", openCloseOptions);
+optionsBanner.addEventListener("click", openCloseOptions);
+
+function openCloseOptions() {
+    console.log("working");
+    if (options.classList.contains("closed")) {
+        options.classList.remove("closed");
+        optionsBanner.classList.remove("closed");
+        optionsButton.innerHTML = '<i class="fa-solid fa-xmark"></i>'
+    }
+    else {
+        options.classList.add("closed");
+        optionsBanner.classList.add("closed");
+        optionsButton.innerHTML = '<i class="fa-solid fa-ellipsis-vertical"></i>'
+    }
+};
+
+// window.onload(){
+//     if (options.classList.contains("closed")) {
+//         options.classList.remove("closed");
+//         optionsBanner.classList.remove("closed");
+//         optionsButton.innerHTML = '<i class="fa-solid fa-xmark"></i>'
+//     }
+// }

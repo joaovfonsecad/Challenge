@@ -9,12 +9,33 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <div id="options" class="closed">
+        <div class="opt_wrapper">
+            <a href="./profile.html" class="button_opt profile">
+                <!-- <i class="fa-solid fa-user"></i> -->
+                Profile page
+            </a>
+        </div>
+        <div class="opt_wrapper">
+            <a href="./config.html" class="button_opt config">
+                <!-- <i class="fa-solid fa-gear"></i> -->
+                Configurations
+            </a>
+        </div>
+        <div class="opt_wrapper">
+            <a href="./login.html" class="button_opt config">
+                <!-- <i class="fa-solid fa-arrow-right-to-bracket"></i> -->
+                Login/Create account
+            </a>
+        </div>
+    </div>
+    <div id="options_banner" class="closed"></div>
     <div id="info_banner">
         <button id="info_button" onclick="openCloseInfo()">
             <i class="fa-solid fa-info"></i>
         </button>
     </div>
-    <div id="info" class="info_closed" onclick="openCloseInfo()">
+    <div id="info" class="closed" onclick="openCloseInfo()">
         <h2>Página de Chats</h2>
         <p>Pagina voltada tanto a candidatos quanto a empresas. <br> Apresenta a lista de conversas entre usuários. <br>Ao abrir um chat uma div na própria página irá abrir com o log da conversa e o user poderá dar continuidade ao seu diálogo. </p>
         <div id="info_descricao">
@@ -45,9 +66,9 @@
                 <!-- <img src="" alt=""> -->
                 <h1>LOGO JOBBER</h1>
             </a>
-            <a href="./opt.html" class="button_nav config">
+            <button class="button_nav config">
                 <i class="fa-solid fa-ellipsis-vertical"></i>
-            </a>
+            </button>
         </nav>
         <div class="content">
             <button  class="chat_preview" id="c1">
@@ -57,7 +78,7 @@
                     </div>
                     <div class="titulo_msg">
                         <h3>Nome Contato 1</h3>
-                        <p>Ultima mensagem, Lorem ipsum dolor sit amet.</p>
+                        <p><span>Ultima mensagem:</span> Lorem ipsum dolor sit amet.</p>
                     </div>
                 </div>
                 <div class="open_chat_icon_wrapper">
@@ -71,7 +92,7 @@
                     </div>
                     <div class="titulo_msg">
                         <h3>Nome Contato 2</h3>
-                        <p>Ultima mensagem, Lorem ipsum dolor sit amet.</p>
+                        <p><span>Ultima mensagem:</span> Lorem ipsum dolor sit amet.</p>
                     </div>
                 </div>
                 <div class="open_chat_icon_wrapper">
@@ -85,7 +106,7 @@
                     </div>
                     <div class="titulo_msg">
                         <h3>Nome Contato 3</h3>
-                        <p>Ultima mensagem, Lorem ipsum dolor sit amet.</p>
+                        <p><span>Ultima mensagem:</span> Lorem ipsum dolor sit amet.</p>
                     </div>
                 </div>
                 <div class="open_chat_icon_wrapper">

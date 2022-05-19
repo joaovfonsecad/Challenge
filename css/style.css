@@ -2,7 +2,7 @@
 
 :root {
     --color-content: linear-gradient(to bottom, #fff, #fff, #fff, #d1d1d1);
-    --color-nav-button: #1f1f1f;
+    --color-nav-button: #2e2e2e;
     /* --color-nav-button: #ffffff; */
     --color-boost: rgb(139, 14, 189);
     --color-dislike: rgb(221, 71, 71);
@@ -23,14 +23,15 @@ body {
     margin: 0;
     padding: 0;
     color: var(--color-text);
+    caret-color: transparent;
 }
 
 h1, h2, h3, h4, h5, h6, h7 {
-    font-family: 'Poppins';
+    font-family: 'Poppins' !important;
 }
 
-p, a, label {
-    font-family: 'Heebo';
+p, a, label, span {
+    font-family: 'Heebo' !important;
 }
 
 a {
@@ -218,14 +219,22 @@ nav {
     position: fixed;
     top: 0;
     border-bottom: 1px solid #101010;
-    box-shadow: 0 0 .5em #0000;
+    box-shadow: 0 .2em .5em #0000005a;
     color: var(--color-nav-button);
+    z-index: 7;
 }
 
 .button_nav {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.button_nav.config {
+    /* z-index: 10; */
+    border: 0;
+    font-size: 2.1em;
+    padding: 0;
 }
 
 nav a i {
@@ -287,27 +296,7 @@ footer i {
     color: var(--color-active-button);
 }
 
-/*               OPTIONS PAGE                  */
-
-.opt_page {
-    margin-top: 8vh;
-    height: 92vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    caret-color: transparent;
-    /* background: red; */
-}
-
-.opt_page ul{
-    list-style: none;
-    margin: 2em 0 0 2em;
-}
-
-.opt_page ul li a{
-    color: var(--color-active-button);
-}
-
+/*               OPTIONS DROPDOWN                  */
 #options {
     display: flex;
     flex-direction: column;
@@ -317,33 +306,37 @@ footer i {
     box-shadow: 0 0 .5em #00000066;
     /* padding: .1em; */
     border-radius: 0 0 .1em .1em;
-    width: 5em;
-    height: 40%;
-    font-size: 2em;
-    position: absolute;
+    width: 14em;
+    height: 12em;
+    position: fixed;
     right: 0;
     top: 0;
-    z-index: 10;
-    font-size: 1.5em;
+    z-index: 6;
+    font-size: 1.3em;
+    margin-top: 8vh;
+    padding: 0 0 0 1.5em;
 }
 
-#options_ghost_div {
-    background: black;
+.opt_wrapper {
+    width: 90%;
+    /* background: red; */
+}
+
+.opt_wrapper a {
+    color: var(--color-nav-button);
+}
+
+.opt_wrapper a:visited {
+    color: var(--color-active-button);
+}
+
+#options_banner {
+    /* background: black; */
     width: 100vw;
     height: 100vh;
     position: absolute;
-}
-
-.button_opt {
-    /* background: orange; */
-    border-radius: 50%;
-    height: .3em;
-    width: .3em;
-    padding: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* border: 3px solid black; */
+    z-index: 5;
+    top: 0;
 }
 
 .close_profile {
@@ -480,6 +473,7 @@ footer i {
 
 #ad_fifa {
     margin-bottom: 2em;
+    max-width: 80vw;
 }
 
 /*                      JOBBER                        */
@@ -517,7 +511,7 @@ footer i {
     position: fixed;
     bottom: 8%;
     left: 0;
-    margin: 0 0 3% 20vw;
+    margin: 0 0 3vh 20vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -674,17 +668,17 @@ footer i {
 
 #info_banner {
     position: fixed;
-    height: 3.5em;
+    height: 4em;
     width: 4em;
     background: var(--color-info);
     right: 0;
     top: 30%;
-    border-radius: 2.5em 0 0 2.5em;
+    border-radius: 50% 0 0 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 .2em .5em rgba(0, 0, 0, 0.8);
-    z-index: 10;
+    z-index: 4;
     caret-color: transparent;
 }
 
@@ -717,8 +711,8 @@ footer i {
     /* background: orange; */
 }
 
-.info_closed {
-    display: none;
+.closed {
+    display: none !important;
 }
 
 .opt_info {
