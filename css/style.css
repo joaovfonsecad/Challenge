@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200&family=Poppins:wght@300&display=swap');
 
 :root {
-    --color-content: linear-gradient(to bottom, #fff, #fff, #fff, #cfcfcf);
+    --color-content: linear-gradient(to bottom, #303030, #303030, #303030, #242424);
+    /* --color-content: linear-gradient(to bottom, #fff, #fff, #fff, #cfcfcf); */
     --color-nav-button: #2e2e2e;
     /* --color-nav-button: #ffffff; */
     --color-boost: rgb(139, 14, 189);
@@ -182,7 +183,7 @@ button:hover {
 }
 
 #login_wrapper input {
-    border-radius: 2em;
+    border-radius: .3em;
     box-shadow: 0 0 .2em var(--color-nav-button);
     padding: .3em 0 .3em .7em;
     caret-color: var(--color-active-button);
@@ -524,9 +525,10 @@ footer i {
     width: 95%;
     height: 98%;
     border-radius: 1em;
-    background: rgb(51, 51, 51);
-    border: 1px solid black;
+    background: rgb(100, 100, 100);
+    border: 1px solid var(--color-active-button);
     color: white;
+    box-shadow: inset 0 0 1em black;
 }
 
 #buttons {
@@ -586,6 +588,7 @@ footer i {
 #superlike {
     color: var(--color-superlike);
     border: 2px solid var(--color-superlike);
+    box-shadow: inset 0 0 .2em var(--color-superlike);
 }
 
 #superlike:active {
@@ -617,6 +620,7 @@ footer i {
     color: var(--color-dislike);
     border: 2px solid var(--color-dislike);
     font-size: 2em;
+    box-shadow: inset 0 0 .2em var(--color-dislike);
 }
 
 #dislike:active {
@@ -631,6 +635,7 @@ footer i {
 #like {
     color: var(--color-like);
     border: 2px solid var(--color-like);
+    box-shadow: inset 0 0 .2em var(--color-like);
 }
 
 #like:active {
@@ -652,6 +657,7 @@ footer i {
     border: 0;
     border-bottom: 1px solid gray;
     box-shadow: 0 0 .5em #929292;
+    color: var(--color-bars);
     /* background: red; */
 }
 
@@ -752,6 +758,159 @@ footer i {
     justify-content: center;
 }
 
+/*                          PROFILE PAGE                             */
+
+.profig_page {
+    background: var(--color-content);
+    width: 100vw;
+    height: 92vh;
+    margin-top: 8vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.profig_page #info {
+    margin-top: 8vh;
+}
+
+.profig_page #info ul {
+    list-style: none;
+    margin-left: 2em;
+}
+
+.edit_button {
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 4%;
+    right: 7%;
+    width: 2.5em;
+    height: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2em;
+    background: transparent;
+    color: var(--color-active-button);
+    border: .1em solid var(--color-active-button);
+    opacity: 75%;
+    box-shadow: 0 0 .2em var(--color-active-button);
+}
+
+.edit_button:hover {
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.active_edit_button {
+    background-color: var(--color-active-button);
+    color: var(--color-bars);
+}
+
+#profile {
+    height: 92vh;
+    width: 80vw;
+    margin: 0 10vw;
+    /* background: red; */
+}
+
+#profile h1 {
+    color: var(--color-active-button);
+}
+
+#profile form {
+    display: flex;
+    flex-direction: column;
+}
+
+#profile form label {
+    font-size: 1.2em;
+}
+
+#profile form input {
+    margin: 1em 0;
+    padding: .6em;
+    border-radius: .5em;
+    background: transparent;
+    border: 1px solid var(--color-active-button);
+    color: var(--color-active-button);
+    caret-color: var(--color-active-button);
+}
+
+#profile form input:focus {
+    outline: none;
+    box-shadow: 0 0 .5em var(--color-active-button);
+}
+
+#profile form input::placeholder {
+    color: var(--color-active-button);
+}
+
+.profile_div_sec {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile_div_sec select {
+    margin: 1em 0;
+    padding: .6em;
+    border-radius: .5em;
+    background: transparent;
+    border: 1px solid var(--color-active-button);
+    color: var(--color-active-button);
+}
+
+.profile_div {
+    width: 80vw;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.profile_div label {
+    flex: 1;
+}
+
+.profile_div input {
+    flex: 3;
+}
+
+.profile_div button, .profile_soft_button {
+    flex: 1;
+    margin: 1em 0;
+    padding: .6em;
+    border-radius: .5em;
+    background: transparent;
+    border: 1px solid var(--color-active-button);
+    color: var(--color-active-button);
+}
+
+#ghost_div_profile {
+    height: 12vh;
+    width: 80vw;
+}
+
+.profile_div_double {
+    margin-top: 1em;
+    display: flex;
+    /* border: 1px solid red; */
+    width: 80vw;
+    /* background: red; */
+}
+
+.profile_div_double div {
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    height: 100%;
+    /* background: green;
+    border: 1px solid white; */
+    justify-content: center;
+    align-items: center;
+}
+
 /*                              INFO                                 */
 
 #info_banner {
@@ -805,15 +964,6 @@ footer i {
 
 .opt_info {
     height: 92vh !important;
-}
-
-.profig_page #info {
-    margin-top: 8vh;
-}
-
-.profig_page #info ul {
-    list-style: none;
-    margin-left: 2em;
 }
 
 #info_descricao {

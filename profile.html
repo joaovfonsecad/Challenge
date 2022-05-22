@@ -60,19 +60,74 @@
                 <i class="fa-solid fa-xmark"></i>
             </a>
         </nav>
+        <div id="profile">
+            <form action="">
+                <h1>Perfil</h1>
+                <h2>Contato:</h2>
+                <label for="first_name"><b>Primeiro Nome:</b></label>
+                <input type="text" placeholder="" name="first_name" id="first_name_input">
+                <label for="last_name"><b>Sobrenome:</b></label>
+                <input type="text" placeholder="" name="last_name" id="last_name_input">
+                <label for="email"><b>Email:</b></label>
+                <input type="email" placeholder="" name="email" id="email_input">
+                <label for="contact_number"><b>Número de Contato:</b></label>
+                <input type="tel" placeholder="" name="contact_number" id="contact_number_input">
+                <label for="linkedin"><b>Linkedin:</b></label>
+                <input type="text" placeholder="" name="linkedin" id="linkedin_input">
+                <h2>Skills:</h2>
+                <div class="profile_div">
+                    <label for="soft_skills"><b>Soft Skills:</b></label>
+                    <input type="text" placeholder="" name="soft_skills" id="soft_skills_input">
+                    <button class="profile_soft_button">Adicionar</button>
+                </div>
+                <div class="profile_div">
+                    <label for="hard_skills"><b>Hard Skills:</b></label>
+                    <input type="text" placeholder="" name="hard_skills" id="hard_skills_input">
+                    <button class="profile_soft_button">Adicionar</button>
+                </div>
+                <h2>Educação:</h2>
+                <div class="profile_div_sec">
+                    <label for="nivel_ensino"><b>Nível de Ensino:</b></label>
+                    <select name="nivel_ensino" id="nivel_ensino_select">
+                        <option value="0">Selecione uma Opção</option>
+                        <option value="1">Graduação</option>
+                        <option value="2">Pós Graduação</option>
+                        <option value="3">MBA</option>
+                        <option value="4">Mestrado</option>
+                        <option value="5">Doutorado</option>
+                        <option value="6">Pós Doutorado</option>
+                        <option value="7">Livre Docência</option>
+                        <option value="8">Técnico</option>
+                    </select>
+                    <label for="curso"><b>Nome do Curso:</b></label>
+                    <input type="text" placeholder="" name="curso" id="curso_input">
+                    <label for="institution"><b>Nome da instituição:</b></label>
+                    <input type="text" placeholder="" name="institution" id="institution_input">
+                    <label for="cursando">
+                        <b>Estou cursando:</b>
+                        <input type="checkbox" placeholder="" name="cursando" id="cursando_input">
+                    </label>
+                    <div class="profile_div_double">
+                        <div>
+                            <label for="inicio"><b>Data de Início:</b></label>
+                            <input type="date" placeholder="" name="inicio" id="inicio_input">
+                        </div>
+                        <div></div>
+                        <div>
+                            <label for="fim"><b>Data de conclusão:</b></label>
+                            <input type="date" placeholder="" name="fim" id="fim_input">
+                        </div>
+                    </div>
+                    <button class="profile_soft_button">Adicionar</button>
+                </div>
+                <div id="ghost_div_profile"></div>
+                <button class="edit_button">
+                    <!-- <i class="fa-solid fa-pen-to-square"></i> -->
+                    <i class="fa-solid fa-pen"></i>
+                </button>
+            </form>
+        </div>
     </div>
-    <div id="imagem_rosto">
-
-    </div>
-    <!-- <form action="index.html" method="get" onsubmit="">
-        <fieldset>
-            <legend>Login</legend>
-            <div>
-                <label for="uname">Usuário</label>
-                <input type="text" name="uname" id="uname_id" placeholder="Digite seu Usuário">
-            </div>
-        </fieldset>
-    </form> -->
     <script src="javascript/script.js"></script>
 </body>
 </html>
