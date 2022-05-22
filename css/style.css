@@ -760,6 +760,11 @@ footer i {
 
 /*                          PROFILE PAGE                             */
 
+.opt_profile {
+    margin-top: -8vh !important;
+    height: 100vh !important;
+}
+
 .profig_page {
     background: var(--color-content);
     width: 100vw;
@@ -962,9 +967,9 @@ footer i {
     display: none !important;
 }
 
-.opt_info {
+/* .opt_info {
     height: 92vh !important;
-}
+} */
 
 #info_descricao {
     color: var(--color-like);
