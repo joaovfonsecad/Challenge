@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200&family=Poppins:wght@300&display=swap');
 
 :root {
-    --color-content: linear-gradient(to bottom, #fff, #fff, #fff, #d1d1d1);
+    --color-content: linear-gradient(to bottom, #fff, #fff, #fff, #cfcfcf);
     --color-nav-button: #2e2e2e;
     /* --color-nav-button: #ffffff; */
     --color-boost: rgb(139, 14, 189);
@@ -19,6 +19,26 @@
     --color-text: #fff;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(136, 136, 136, 0.3);
+    border-radius: .4em;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
 body {
     margin: 0;
     padding: 0;
@@ -30,7 +50,7 @@ h1, h2, h3, h4, h5, h6, h7 {
     font-family: 'Poppins' !important;
 }
 
-p, a, label, span {
+p, a, label, span, div {
     font-family: 'Heebo' !important;
 }
 
@@ -263,6 +283,11 @@ nav a i {
 .content {
     width: 100vw;
     background: var(--color-content);
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
 }
 
 footer {
@@ -303,7 +328,7 @@ footer i {
     align-items: center;
     justify-content: space-evenly;
     background: var(--color-bars);
-    box-shadow: 0 0 .5em #00000066;
+    box-shadow: 0 .3em .5em #00000066;
     /* padding: .1em; */
     border-radius: 0 0 .1em .1em;
     width: 14em;
@@ -625,14 +650,17 @@ footer i {
     display: flex;
     align-items: center;
     border: 0;
+    border-bottom: 1px solid gray;
+    box-shadow: 0 0 .5em #929292;
     /* background: red; */
 }
 
 .chat_preview_wrapper {
-    flex: 7;
+    flex: 9;
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     /* background: orange; */
 }
 
@@ -646,7 +674,7 @@ footer i {
 .img_pessoa {
     display: flex;
     overflow: hidden;
-    margin-left: 2em;
+    margin-left: 3%;
 }
 
 .img_pessoa {
@@ -656,12 +684,72 @@ footer i {
 }
 
 .titulo_msg {
-    margin-left: 2em;
-    width: 50%;
+    width: 85%;
+    height: 80%;
+    text-align: start;
+    overflow: hidden;
 }
 
 .open_chat_icon {
     font-size: 1.5em;
+}
+
+/*                             EVENTOS                               */
+
+.evento {
+    border: .1em solid var(--color-active-button);
+    border-radius: 1em;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 0 1em 0;
+}
+
+.evento button {
+    border: .1em solid var(--color-active-button) !important;
+    margin: 0 .5em 1.5em .5em !important;
+    color: var(--color-active-button) !important;
+    background: transparent !important;
+    font-size: 1em !important;
+}
+
+.evento button:hover {
+    background: var(--color-active-button) !important;
+    color: var(--color-bars) !important;
+}
+
+.evento h2 {
+    color: var(--color-active-button);
+}
+
+.evento_texto {
+    width: 95%;
+}
+
+.evento_texto span, .evento_texto div {
+    color: var(--color-active-button);
+}
+
+.evento_texto div {
+    width: 98%;
+    font-size: 1.5em;
+    text-align: end;
+    margin-top: -.3em;
+}
+
+.evento hr {
+    width: 86%;
+    margin: 0 0 1.5em 0;
+    border-color: var(--color-active-button);
+}
+
+.evento_options {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*                              INFO                                 */
